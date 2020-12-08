@@ -1,0 +1,250 @@
+<!-- Style Css -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/custom.css">
+
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/geodata/worldHigh.js"></script>
+
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+ // Create map instance
+var chart = am4core.create("chartdiv", am4maps.MapChart);
+chart.maxZoomLevel = 1;
+// Set map definition
+try {
+    chart.geodata = am4geodata_worldHigh;
+}
+catch (e) {
+    chart.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
+}
+
+// Set projection
+chart.projection = new am4maps.projections.Mercator();
+
+// Create map polygon series
+// var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+// map polygon series (countries)
+var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+polygonSeries.useGeodata = true;
+// specify which countries to include
+polygonSeries.include = ['AL',
+ 'AD',
+ 'AT',
+ 'BY',
+ 'BE',
+ 'BG',
+ 'HR',
+ 'CY',
+ 'CZ',
+ 'DK',
+ 'EE',
+ 'FI',
+ 'FR',
+ 'DE',
+ 'GR',
+ 'HU',
+ 'IE',
+ 'IT',
+ 'LV',
+ 'LI',
+ 'LT',
+ 'LU',
+ 'MK',
+ 'MT',
+ 'MD',
+ 'MC',
+ 'NL',
+ 'NO',
+ 'PL',
+ 'PT',
+ 'RO',
+ 'RS',
+ 'SK',
+ 'SI',
+ 'ES',
+ 'SE',
+ 'CH',
+ 'UA',
+ 'GB']
+
+// country area look and behavior
+var polygonTemplate = polygonSeries.mapPolygons.template;
+polygonTemplate.strokeOpacity = 1;
+polygonTemplate.stroke = am4core.color("#ffffff");
+polygonTemplate.fillOpacity = 0.7;
+polygonTemplate.tooltipText = "{name}";
+
+
+//Set min/max fill color for each area
+polygonSeries.heatRules.push({
+  property: "fill",
+  target: polygonSeries.mapPolygons.template,
+  min: chart.colors.getIndex(1).brighten(1),
+  max: chart.colors.getIndex(1).brighten(-0.3)
+});
+
+// Make map load polygon data (state shapes and names) from GeoJSON
+polygonSeries.useGeodata = true;
+
+// Set heatmap values for each state
+polygonSeries.data = [
+{id: "AT",
+value: 395,
+value2: 119,
+value3: 5,
+value4: 1},
+{id: "BE",
+value: 693,
+value2: 157,
+value3: 5,
+value4: 1},
+{id: "BG",
+value: 276,
+value2: 104,
+value3: 2,
+value4: 2},
+{id: "HR",
+value: 266,
+value2: 86,
+value3: 3,
+value4: 1},
+{id: "CY",
+value: 328,
+value2: 98,
+value3: 2,
+value4: 1},
+{id: "DK",
+value: 300,
+value2: 104,
+value3: 2,
+value4: 2},
+{id: "EE",
+value: 312,
+value2: 124,
+value3: 3,
+value4: 3},
+{id: "FR",
+value: 308,
+value2: 114,
+value3: 6,
+value4: 1},
+{id: "DE",
+value: 328,
+value2: 127,
+value3: 3,
+value4: 1},
+{id: "GR",
+value: 326,
+value2: 137,
+value3: 4,
+value4: 1},
+{id: "HU",
+value: 308,
+value2: 130,
+value3: 4,
+value4: 2},
+{id: "IE",
+value: 400,
+value2: 184,
+value3: 2,
+value4: 1},
+{id: "LV",
+value: 545,
+value2: 166,
+value3: 5,
+value4: 1},
+{id: "LT",
+value: 521,
+value2: 218,
+value3: 4,
+value4: 1},
+{id: "MT",
+value: 468,
+value2: 114,
+value3: 5,
+value4: 1},
+{id: "NL",
+value: 338,
+value2: 142,
+value3: 2,
+value4: 1},
+{id: "PL",
+value: 294,
+value2: 133,
+value3: 6,
+value4: 3},
+{id: "PT",
+value: 311,
+value2: 106,
+value3: 3,
+value4: 1},
+{id: "SI",
+value: 310,
+value2: 113,
+value3: 1,
+value4: 1},
+{id: "ES",
+value: 295,
+value2: 103,
+value3: 5,
+value4: 1},
+{id: "GB",
+value: 328,
+value2: 75,
+value3: 6,
+value4: 2},
+
+];
+
+// Set up heat legend
+let heatLegend = chart.createChild(am4maps.HeatLegend);
+heatLegend.series = polygonSeries;
+heatLegend.align = "right";
+heatLegend.valign = "bottom";
+heatLegend.width = am4core.percent(20);
+heatLegend.valueAxis.renderer.labels.template.fontSize = 14;
+heatLegend.marginRight = am4core.percent(35);
+heatLegend.minValue = 200;
+heatLegend.maxValue = 700;
+
+// Set up custom heat map legend labels using axis ranges
+var minRange = heatLegend.valueAxis.axisRanges.create();
+minRange.value = heatLegend.minValue;
+minRange.label.text = "200 links";
+var maxRange = heatLegend.valueAxis.axisRanges.create();
+maxRange.value = heatLegend.maxValue;
+maxRange.label.text = "1000 links";
+
+// Blank out internal heat legend value axis labels
+heatLegend.valueAxis.renderer.labels.template.adapter.add("text", function(labelText) {
+  return "";
+});
+
+// Configure series tooltip
+var polygonTemplate = polygonSeries.mapPolygons.template;
+polygonTemplate.tooltipText = "[bold]{name}[\] \n retrieved links: {value} \n unique domains: {value2} \n shortlisted portals: {value3} \n scraped portals: {value4}";
+polygonTemplate.nonScalingStroke = true;
+polygonTemplate.strokeWidth = 0.5;
+
+// Create hover state and set alternative fill color
+var hs = polygonTemplate.states.create("hover");
+hs.properties.fill = am4core.color("#3c5bdc");
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>

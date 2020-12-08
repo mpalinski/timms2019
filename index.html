@@ -1,0 +1,2163 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>TIMMS 2019 </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/icon.png">
+
+	<!-- Google font (font-family: 'Poppins', sans-serif;) -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,900" rel="stylesheet">
+
+	<!-- Plugins -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plugins.css">
+
+	<!-- Style Css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/custom.css">
+	<!-- Resources -->
+	<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+	<script src="https://cdn.amcharts.com/lib/4/geodata/worldHigh.js"></script>
+
+	<!-- <script src="https://cdn.amcharts.com/lib/4/core.js"></script> -->
+	<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+	<!-- <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+
+</head>
+
+<body>
+	<!-- [if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<!-- Preloader -->
+    <div id="rn-preloader-wrap">
+        <div class="rn-preloader-box">
+          <div class="rn-preloader-content">
+            <div class="rn-preloader-circle"></div>
+            <div class="rn-preloader-line-mask">
+              <div class="rn-preloader-line"></div>
+            </div>
+            <img src="img/logo.png" alt="logo" width="50">
+          </div>
+        </div>
+    </div>
+    <!-- Prealoader -->
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="wrapper">
+
+		<!-- Header -->
+		<header class="header rn-header header-transparent poss_relative header--paralax black-header">
+			<div class="header-wrapper">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-sm-6 col-6">
+							<div class="hd-left text-left">
+								<div class="logo">
+									<a href="index.html">
+										<img src="img/indeks.png" width="200" alt="Evidence Institut">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 col-6">
+							<div class="hd-right text-right">
+								<div class="menu menu-toggle" id="menu-toggle">
+									<div class="menu-toggle-inner">
+										<div class="menu-text-wrap">
+											<span class="menu-text open-text">Menu</span>
+											<span class="menu-text close-text">Close</span>
+										</div>
+										<div class="hamburger-wrap">
+											<div id="hamburger">
+												<span></span>
+												<span></span>
+												<span></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="menu-section">
+				<ul class="menu" id="menu">
+					<!-- <li>
+						<a href="../index.html"  target="_blank">
+							<span class="menu-text">M
+								<span class="menu-arrow">
+									<span class="menu-arrow-icon menu-arrow-original">
+										<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+											<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+										</svg>
+									</span>
+								</span>
+							</span>
+					</a></li> -->
+					<li>
+						<a href="#home">
+							<span class="menu-text">Start
+								<span class="menu-arrow">
+									<span class="menu-arrow-icon menu-arrow-original">
+										<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+											<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+										</svg>
+									</span>
+								</span>
+							</span>
+					</a></li>
+					<li><a href="#math">
+						<span class="menu-text">Matematyka porównanie wyników
+							<span class="menu-arrow">
+								<span class="menu-arrow-icon menu-arrow-original">
+									<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</span>
+						</span>
+					</a></li>
+					<li><a href="#science">
+						<span class="menu-text">Przyroda porównanie wyników
+							<span class="menu-arrow">
+								<span class="menu-arrow-icon menu-arrow-original">
+									<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</span>
+						</span>
+					</a></li>
+					<li><a href="#time">
+						<span class="menu-text">Zmiana wyników względem 2015 roku
+							<span class="menu-arrow">
+								<span class="menu-arrow-icon menu-arrow-original">
+									<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</span>
+						</span>
+					</a></li>
+					<li><a href="#kids">
+						<span class="menu-text">Wpływ edukacji przedszkolnej
+							<span class="menu-arrow">
+								<span class="menu-arrow-icon menu-arrow-original">
+									<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</span>
+						</span>
+					</a></li>
+					<li><a href="#conclusion">
+						<span class="menu-text">Podsumowanie
+							<span class="menu-arrow">
+								<span class="menu-arrow-icon menu-arrow-original">
+									<svg fill="#fff" width="100%" height="8" xmlns="http://www.w3.org/2000/svg">
+										<path d="M44.102 4l-2.444-2.445.009-1.405 4.325 4.325-4.38 4.38.01-1.423L44.101 5H.002V4z" fill-rule="evenodd"></path>
+									</svg>
+								</span>
+							</span>
+						</span>
+					</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		<!--// Header -->
+
+		<!-- Page Content -->
+		<main class="page-content swiper-container">
+			<div class="swiper-wrapper">
+				<!-- Start Hero Area -->
+				<!-- <div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-image:url('img/slider-6/slider-1.jpg');"> -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+
+					<div class="container" id="home">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+								</br>
+							</br>
+						</br>
+
+									<h2>TIMMS 2019</h2>
+									<h4>Wyniki polskich uczniów</h4>
+										<img class="lazy" data-src="./img/intro0.gif" width="450" height="450" type="video/gif" id="intro" src=""></img>
+<script>
+										$(document).ready(function() {
+
+											    $("img.lazy").lazy({
+            delay: 1000
+        });
+
+											});
+											</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<!-- <div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-image:url('img/slider-6/slider-1.jpg');"> -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#d2d8e4">
+
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h3>Czym jest TIMMS?</h3>
+<!-- <p>
+	<ul>
+		<li>TIMSS (Trends in Mathematics and Science Achievement) to międzynarodowe badanie oceniające wiedzę uczniów z matematyki i przyrody. </li>
+<li>			Realizowane jest w klasach IV i VIII, ale Polska przystępuje jedynie do badania czwartoklasistów. </li>
+	<li>TIMSS przeprowadzany jest od 1995 roku. W badaniu z 2019 roku wzięły udział łącznie 64 kraje (58 krajów w czwartej klasie oraz 39 krajów w ósmej klasie).</li>
+	<li> Dane dla Polski dostępne są dopiero od 2015 roku, więc zmiany wyników można analizować tylko w okresie ostatnich czterech lat.</li>
+</ul>
+</p> -->
+<!-- <p class="text-justify">
+
+	TIMSS (Trends in Mathematics and Science Achievement) to międzynarodowe badanie oceniające wiedzę uczniów z matematyki i przyrody. </br>
+			Realizowane jest w klasach IV i VIII, ale Polska przystępuje jedynie do badania czwartoklasistów. </br>
+	TIMSS przeprowadzany jest od 1995 roku.</br> W badaniu z 2019 roku wzięły udział łącznie 64 kraje (58 krajów w czwartej klasie oraz 39 krajów w ósmej klasie).</br>
+	 Dane dla Polski dostępne są dopiero od 2015 roku, więc zmiany wyników można analizować tylko w okresie ostatnich czterech lat.
+</p> -->
+<p>
+TIMSS (Trends in Mathematics and Science Achievement) to międzynarodowe badanie
+oceniające wiedzę uczniów z matematyki i przyrody. Realizowane jest w klasach IV
+i VIII, ale Polska przystępuje jedynie do badania czwartoklasistów. TIMSS przeprowadzany
+jest od 1995 roku. W badaniu z 2019 roku wzięły udział łącznie 64 kraje (58
+krajów w czwartej klasie oraz 39 krajów w ósmej klasie). </br></br> Dane dla Polski dostępne są
+co prawda od 2011 roku, ale w pierwszej edycji TIMSS w Polsce uczestniczyli uczniowie
+trzecich klas, przez co dane nie są porównywalne w czasie. Od 2015 roku w badaniu
+uczestniczą polscy czwartoklasiści, więc zmiany wyników można analizować tylko
+w okresie ostatnich czterech lat.
+
+</p>
+
+									<!-- <p>There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration.</p> -->
+								 		<!-- <img src="./img/intro0.gif" width="600" type="video/gif"></img> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container" id="math">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Jak wypadają uczniowie czwartych klas w matematyce?</h3>
+
+									<img src="./img/intro1.gif" width="600" type="video/gif" id="intro"></img>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#d2d8e4">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+
+<p>
+Najwyższe wyniki osiągnęły kraje z Azji: Singapur (625), Hongkong (602), Korea (600),
+Tajwan (599) i Japonia (593). Polscy uczniowie ze średnim wynikiem 520 punktów
+uplasowali się na 26. miejscu wśród 58 krajów biorących udział w badaniu. </br></br> Wyniki wielu
+innych czwartoklasistów są jednak statystycznie podobne do Polski – porównywalny
+rezultat uzyskali uczniowie z Portugalii, Danii, Węgier, Turcji, Szwecji, Niemiec, Australii,
+Azerbejdżanu, Bułgarii i Włoch. 19 krajów osiągnęło wynik istotnie lepszy niż Polska.
+</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z matematyki</h3>
+
+			<!-- <iframe src="bar_math.html" width="100%" height="600" frameBorder="0"> </iframe> -->
+			<!-- Chart code -->
+			<script>
+			am4core.ready(function() {
+
+			// Themes begin
+			am4core.useTheme(am4themes_animated);
+			// Themes end
+
+			var chart = am4core.create("chartdiv_bar", am4charts.XYChart);
+
+			var data = [
+			{category: "Philippines",
+			cnt: "Filipiny",
+			value: 297
+			},
+			{category: "Pakistan",
+			cnt: "Pakistan",
+			value: 328
+			},
+			{category: "South-africa",
+			cnt: "RPA",
+			value: 374
+			},
+			{category: "Morocco",
+			cnt: "Maroko",
+			value: 383
+			},
+			{category: "Kuwait",
+			cnt: "Kuwejt",
+			value: 383
+			},
+			{category: "Saudi Arabia",
+			cnt: "Arabia Saudyjska",
+			value: 398
+			},
+			{category: "Oman",
+			cnt: "Oman",
+			value: 431
+			},
+			{category: "Chile",
+			cnt: "Chile",
+			value: 441
+			},
+			{category: "Iran",
+			cnt: "Iran",
+			value: 443
+			},
+			{category: "Kosovo",
+			cnt: "Kosowo",
+			value: 444
+			},
+			{category: "Qatar",
+			cnt: "Katar",
+			value: 449
+			},
+			{category: "Bosnia and Herzegovina",
+			cnt: "Bośnia i Hercegowina",
+			value: 452
+			},
+			{category: "Montenegro",
+			cnt: "Czarnogóra",
+			value: 453
+			},
+			{category: "Republic-of-Macedonia",
+			cnt: "Macedonia Północna",
+			value: 472
+			},
+			{category: "Bahrain",
+			cnt: "Bahrajn",
+			value: 480
+			},
+			{category: "United Arab Emirates",
+			cnt: "Zjednoczone Emiraty Arabskie",
+			value: 481
+			},
+			{category: "Georgia",
+			cnt: "Gruzja",
+			value: 482
+			},
+			{category: "France",
+			cnt: "Francja",
+			value: 485
+			},
+			{category: "New Zealand",
+			cnt: "Nowa Zelandia",
+			value: 487
+			},
+			{category: "Albania",
+			cnt: "Albania",
+			value: 494
+			},
+			{category: "Armenia",
+			cnt: "Armenia",
+			value: 498
+			},
+			{category: "Spain",
+			cnt: "Hiszpania",
+			value: 502
+			},
+			{category: "Serbia",
+			cnt: "Serbia",
+			value: 508
+			},
+			{category: "Croatia",
+			cnt: "Chorwacja",
+			value: 509
+			},
+			{category: "Malta",
+			cnt: "Malta",
+			value: 509
+			},
+			{category: "Slovakia",
+			cnt: "Słowacja",
+			value: 510
+			},
+			{category: "Kazakhstan",
+			cnt: "Kazachstan",
+			value: 512
+			},
+			{category: "Canada",
+			cnt: "Kanada",
+			value: 512
+			},
+			{category: "Azerbaijan",
+			cnt: "Azerbejdżan",
+			value: 515
+			},
+			{category: "Bulgaria",
+			cnt: "Bułgaria",
+			value: 515
+			},
+			{category: "Italy",
+			cnt: "Włochy",
+			value: 515
+			},
+			{category: "Australia",
+			cnt: "Australia",
+			value: 516
+			},
+			{category: "Republic of Poland",
+			cnt: "Polska",
+			value: 520
+			},
+			{category: "Sweden",
+			cnt: "Szwecja",
+			value: 521
+			},
+			{category: "Germany",
+			cnt: "Niemcy",
+			value: 521
+			},
+			{category: "Hungary",
+			cnt: "Węgry",
+			value: 523
+			},
+			{category: "Turkey",
+			cnt: "Turcja",
+			value: 523
+			},
+			{category: "Portugal",
+			cnt: "Portugalia",
+			value: 525
+			},
+			{category: "Denmark",
+			cnt: "Dania",
+			value: 525
+			},
+			{category: "Belgium",
+			cnt: "Belgia",
+			value: 532
+			},
+			{category: "Cyprus",
+			cnt: "Cypr",
+			value: 532
+			},
+			{category: "Finland",
+			cnt: "Finlandia",
+			value: 532
+			},
+			{category: "Czech Republic",
+			cnt: "Czechy",
+			value: 533
+			},
+			{category: "United States",
+			cnt: "USA",
+			value: 535
+			},
+			{category: "Netherlands",
+			cnt: "Holandia",
+			value: 538
+			},
+			{category: "Austria",
+			cnt: "Austria",
+			value: 539
+			},
+			{category: "Lithuania",
+			cnt: "Litwa",
+			value: 542
+			},
+			{category: "Norway",
+			cnt: "Norwegia",
+			value: 543
+			},
+			{category: "Latvia",
+			cnt: "Łotwa",
+			value: 546
+			},
+			{category: "Ireland",
+			cnt: "Irlandia",
+			value: 548
+			},
+			{category: "England",
+			cnt: "Anglia",
+			value: 556
+			},
+			{category: "United-kingdom",
+			cnt: "Irlandia Północna",
+			value: 566
+			},
+			{category: "Russia",
+			cnt: "Rosja",
+			value: 567
+			},
+			{category: "Japan",
+			cnt: "Japonia",
+			value: 593
+			},
+			{category: "Taiwan",
+			cnt: "Tajwan",
+			value: 599
+			},
+			{category: "South Korea",
+			cnt: "Korea Południowa",
+			value: 600
+			},
+			{category: "Hong-kong",
+			cnt: "Hongkong",
+			value: 602
+			},
+			{category: "Singapore",
+			cnt: "Singapur",
+			value: 625
+			},
+			];
+
+
+			chart.data = data;
+			var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+			categoryAxis.renderer.grid.template.location = 0;
+			categoryAxis.dataFields.category = "category";
+			categoryAxis.renderer.minGridDistance = 15;
+			categoryAxis.renderer.grid.template.location = 0.5;
+			categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
+			categoryAxis.renderer.labels.template.rotation = -90;
+			categoryAxis.renderer.labels.template.horizontalCenter = "left";
+			categoryAxis.renderer.labels.template.location = 0.5;
+			categoryAxis.tooltip.disabled = true;
+
+
+			categoryAxis.renderer.labels.template.adapter.add("dx", function(dx, target) {
+			    return -target.maxRight / 2;
+			})
+
+			categoryAxis.renderer.labels.template.disabled = true;
+			var image = new am4core.Image();
+			image.horizontalCenter = "middle";
+			image.width = 20;
+			image.height = 20;
+			image.verticalCenter = "middle";
+			image.adapter.add("href", (href, target)=>{
+			  let category = target.dataItem.category;
+			  if(category){
+			    return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+			  }
+			  return href;
+			})
+			categoryAxis.dataItems.template.bullet = image;
+
+			var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+			valueAxis.tooltip.disabled = true;
+			valueAxis.renderer.ticks.template.disabled = true;
+			valueAxis.renderer.axisFills.template.disabled = true;
+
+			var series = chart.series.push(new am4charts.ColumnSeries());
+			series.dataFields.categoryX = "category";
+			series.dataFields.valueY = "value";
+			series.tooltipText = "{cnt} {valueY.value}";
+			series.sequencedInterpolation = true;
+			series.fillOpacity = 0;
+			series.strokeOpacity = 1;
+			series.strokeDashArray = "1,3";
+			series.columns.template.width = 0.01;
+			series.tooltip.pointerOrientation = "horizontal";
+
+			var bullet = series.bullets.create(am4charts.CircleBullet);
+
+			chart.cursor = new am4charts.XYCursor();
+
+			chart.scrollbarX = new am4core.Scrollbar();
+			chart.scrollbarY = new am4core.Scrollbar();
+
+
+			chart.events.on("ready", function () {
+			  categoryAxis.zoomToCategories(
+			  "Albania","Singapore")
+			})
+			var range = categoryAxis.axisRanges.create();
+			range.category = "Republic of Poland";
+			range.axisFill.fill = chart.colors.getIndex(1);
+			range.axisFill.fillOpacity = 0.2;
+			range.label.text = "";
+			}); // end am4core.ready()
+			</script>
+
+			<!-- HTML -->
+			<div id="chartdiv_bar" style="height: 500px;"></div>
+		</br>
+			<p>[Dostosuj filtr umieszczony nad wykresem, żeby zmienić zakres pokazywanych krajów]</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#ffffff">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z matematyki - mapa</h3>
+
+									<!-- <iframe src="map0.html" width="100%" height="500" frameBorder="0"> </iframe> -->
+									<!-- Chart code -->
+									<script>
+									am4core.ready(function() {
+
+									// Themes begin
+									am4core.useTheme(am4themes_animated);
+									// Themes end
+
+									 // Create map instance
+									var chart = am4core.create("chartdiv", am4maps.MapChart);
+									chart.maxZoomLevel = 1;
+									// Set map definition
+									try {
+									    chart.geodata = am4geodata_worldHigh;
+									}
+									catch (e) {
+									    chart.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
+									}
+
+									// Set projection
+									chart.projection = new am4maps.projections.Mercator();
+
+									// Create map polygon series
+									// var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+									// map polygon series (countries)
+									var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+									polygonSeries.useGeodata = true;
+									// specify which countries to include
+
+									polygonSeries.exclude = ["AQ"];
+
+									// country area look and behavior
+									var polygonTemplate = polygonSeries.mapPolygons.template;
+									polygonTemplate.strokeOpacity = 1;
+									polygonTemplate.stroke = am4core.color("#ffffff");
+									polygonTemplate.fillOpacity = 0.9;
+									polygonTemplate.tooltipText = "{name}";
+
+
+									//Set min/max fill color for each area
+									polygonSeries.heatRules.push({
+									  property: "fill",
+									  target: polygonSeries.mapPolygons.template,
+									  min: chart.colors.getIndex(1).brighten(1),
+									  max: chart.colors.getIndex(1).brighten(-.7)
+									});
+
+									// Make map load polygon data (state shapes and names) from GeoJSON
+									polygonSeries.useGeodata = true;
+
+									// Set heatmap values for each state
+									polygonSeries.data = [
+										{id: "PH",
+					cnt: "Filipiny",
+					value: 297},
+					{id: "PK",
+					cnt: "Pakistan",
+					value: 328},
+					{id: "ZA",
+					cnt: "RPA",
+					value: 374},
+					{id: "MA",
+					cnt: "Maroko",
+					value: 383},
+					{id: "KW",
+					cnt: "Kuwejt",
+					value: 383},
+					{id: "SA",
+					cnt: "Arabia Saudyjska",
+					value: 398},
+					{id: "OM",
+					cnt: "Oman",
+					value: 431},
+					{id: "CL",
+					cnt: "Chile",
+					value: 441},
+					{id: "IR",
+					cnt: "Iran",
+					value: 443},
+					{id: "XK",
+					cnt: "Kosowo",
+					value: 444},
+					{id: "QA",
+					cnt: "Katar",
+					value: 449},
+					{id: "BA",
+					cnt: "Bośnia i Hercegowina",
+					value: 452},
+					{id: "ME",
+					cnt: "Czarnogóra",
+					value: 453},
+					{id: "MK",
+					cnt: "Macedonia Północna",
+					value: 472},
+					{id: "BH",
+					cnt: "Bahrajn",
+					value: 480},
+					{id: "AE",
+					cnt: "Zjednoczone Emiraty Arabskie",
+					value: 481},
+					{id: "GE",
+					cnt: "Gruzja",
+					value: 482},
+					{id: "FR",
+					cnt: "Francja",
+					value: 485},
+					{id: "NZ",
+					cnt: "Nowa Zelandia",
+					value: 487},
+					{id: "AL",
+					cnt: "Albania",
+					value: 494},
+					{id: "AM",
+					cnt: "Armenia",
+					value: 498},
+					{id: "ES",
+					cnt: "Hiszpania",
+					value: 502},
+					{id: "RS",
+					cnt: "Serbia",
+					value: 508},
+					{id: "HR",
+					cnt: "Chorwacja",
+					value: 509},
+					{id: "MT",
+					cnt: "Malta",
+					value: 509},
+					{id: "SK",
+					cnt: "Słowacja",
+					value: 510},
+					{id: "KZ",
+					cnt: "Kazachstan",
+					value: 512},
+					{id: "CA",
+					cnt: "Kanada",
+					value: 512},
+					{id: "AZ",
+					cnt: "Azerbejdżan",
+					value: 515},
+					{id: "BG",
+					cnt: "Bułgaria",
+					value: 515},
+					{id: "IT",
+					cnt: "Włochy",
+					value: 515},
+					{id: "AU",
+					cnt: "Australia",
+					value: 516},
+					{id: "PL",
+					cnt: "Polska",
+					value: 520},
+					{id: "SE",
+					cnt: "Szwecja",
+					value: 521},
+					{id: "DE",
+					cnt: "Niemcy",
+					value: 521},
+					{id: "HU",
+					cnt: "Węgry",
+					value: 523},
+					{id: "TR",
+					cnt: "Turcja",
+					value: 523},
+					{id: "PT",
+					cnt: "Portugalia",
+					value: 525},
+					{id: "DK",
+					cnt: "Dania",
+					value: 525},
+					{id: "BE",
+					cnt: "Belgia",
+					value: 532},
+					{id: "CY",
+					cnt: "Cypr",
+					value: 532},
+					{id: "FI",
+					cnt: "Finlandia",
+					value: 532},
+					{id: "CZ",
+					cnt: "Czechy",
+					value: 533},
+					{id: "US",
+					cnt: "USA",
+					value: 535},
+					{id: "NL",
+					cnt: "Holandia",
+					value: 538},
+					{id: "AT",
+					cnt: "Austria",
+					value: 539},
+					{id: "LT",
+					cnt: "Litwa",
+					value: 542},
+					{id: "NO",
+					cnt: "Norwegia",
+					value: 543},
+					{id: "LV",
+					cnt: "Łotwa",
+					value: 546},
+					{id: "IE",
+					cnt: "Irlandia",
+					value: 548},
+					{id: "GB",
+					cnt: "Anglia",
+					value: 556},
+					{id: "XI",
+					cnt: "Irlandia Północna",
+					value: 566},
+					{id: "RU",
+					cnt: "Rosja",
+					value: 567},
+					{id: "JP",
+					cnt: "Japonia",
+					value: 593},
+					{id: "TW",
+					cnt: "Tajwan",
+					value: 599},
+					{id: "KR",
+					cnt: "Korea Południowa",
+					value: 600},
+					{id: "HK",
+					cnt: "Hongkong",
+					value: 602},
+					{id: "SG",
+					cnt: "Singapur",
+					value: 625},
+									];
+
+									// Set up heat legend
+									let heatLegend = chart.createChild(am4maps.HeatLegend);
+									heatLegend.series = polygonSeries;
+									heatLegend.align = "right";
+									heatLegend.valign = "bottom";
+									heatLegend.width = am4core.percent(20);
+									heatLegend.valueAxis.renderer.labels.template.fontSize = 14;
+									heatLegend.marginRight = am4core.percent(35);
+									heatLegend.minValue = 200;
+									heatLegend.maxValue = 700;
+
+									// Set up custom heat map legend labels using axis ranges
+									var minRange = heatLegend.valueAxis.axisRanges.create();
+									minRange.value = heatLegend.minValue;
+									minRange.label.text = "200";
+									var maxRange = heatLegend.valueAxis.axisRanges.create();
+									maxRange.value = heatLegend.maxValue;
+									maxRange.label.text = "700";
+
+									// Blank out internal heat legend value axis labels
+									heatLegend.valueAxis.renderer.labels.template.adapter.add("text", function(labelText) {
+									  return "";
+									});
+
+									// Configure series tooltip
+									var polygonTemplate = polygonSeries.mapPolygons.template;
+									polygonTemplate.tooltipText = "[bold]{cnt}[\] \n wynik z matematyki: {value}";
+									polygonTemplate.nonScalingStroke = true;
+									polygonTemplate.strokeWidth = 0.5;
+
+									// Create hover state and set alternative fill color
+									var hs = polygonTemplate.states.create("hover");
+									hs.properties.fill = am4core.color("#3c5bdc");
+
+									}); // end am4core.ready()
+									</script>
+
+									<!-- HTML -->
+									<div id="chartdiv" style="height: 500px;"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z matematyki - grupy krajów</h3>
+
+<!-- <iframe src="country_rank.html" width="100%" height="600" frameBorder="0"> </iframe> -->
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+var data = {
+    "Niższe wyniki": { "Kazachstan": 1, "Kanada":1,"Słowacja":1,"Chorwacja":1,"Malta":1,"Serbia":1,"Hiszpania":1,"Armenia":1,"Albania":1,"Nowa Zelandia":1,"Francja":1,"Gruzja":1,"ZEA":1,"Bahrajn":1,"Macedonia Północna":1,"Czarnogóra":1,"Bośnia i Hercegowina":1,"Katar":1,"Kosowo":1,"Iran":1,"Chile":1,"Oman":1,"Arabia Saudyjska":1,"Maroko":1,"Kuwejt":1,"RPA":1,"Pakistan":1,"Filipiny":1},
+    "Wyższe wyniki": { "Singapur": 1, "Hongkong": 1, "Korea Południowa":1, "Tajwan":1,"Japonia":1,"Rosja":1,"Irlandia Północna":1,"Anglia":1,"Irlandia":1,"Łotwa":1,"Norwegia":1,"Litwa":1,"Austria":1,"Holandia":1,"USA":1,"Czechy":1,"Belgia":1,"Cypr":1,"Finlandia":1},
+    "Porównywalne wyniki": { "Portugalia": 1, "Dania": 1,"Węgry":1,"Turcja":1,"Szwecja":1,"Niemcy":1,"Australia":1,"Azerbejdżan":1,"Bułgaria":1,"Włochy":1},
+}
+
+function processData(data) {
+  var treeData = [];
+
+  var smallBrands = { name: "Other", children: [] };
+
+  for (var brand in data) {
+    var brandData = { name: brand, children: [] }
+    var brandTotal = 0;
+    for (var model in data[brand]) {
+      brandTotal += data[brand][model];
+    }
+
+    for (var model in data[brand]) {
+      // do not add very small
+      if (data[brand][model] > 0) {
+        brandData.children.push({ name: model, count: data[brand][model] });
+      }
+    }
+
+    // add to small brands if total number less than
+    if (brandTotal > 1) {
+      treeData.push(brandData);
+    }
+    // else {
+    //   smallBrands.children.push(brandData)
+    // }
+
+  }
+  // treeData.push(smallBrands);
+  return treeData;
+}
+
+// create chart
+var chart = am4core.create("chartdiv_rank", am4charts.TreeMap);
+chart.hiddenState.properties.opacity = 1; // this makes initial fade in effect
+
+// only one level visible initially
+chart.maxLevels = 1;
+// define data fields
+chart.dataFields.value = "count";
+chart.dataFields.name = "name";
+chart.dataFields.children = "children";
+chart.homeText = "";
+
+// enable navigation
+chart.navigationBar = new am4charts.NavigationBar();
+
+// level 0 series template
+var level0SeriesTemplate = chart.seriesTemplates.create("0");
+level0SeriesTemplate.strokeWidth = 2;
+
+// by default only current level series bullets are visible, but as we need brand bullets to be visible all the time, we modify it's hidden state
+level0SeriesTemplate.bulletsContainer.hiddenState.properties.opacity = 1;
+level0SeriesTemplate.bulletsContainer.hiddenState.properties.visible = true;
+// create hover state
+var columnTemplate = level0SeriesTemplate.columns.template;
+var hoverState = columnTemplate.states.create("hover");
+
+// darken
+hoverState.adapter.add("fill", function (fill, target) {
+  if (fill instanceof am4core.Color) {
+    return am4core.color(am4core.colors.brighten(fill.rgb, -0.2));
+  }
+  return fill;
+})
+
+// add logo
+var image = columnTemplate.createChild(am4core.Image);
+image.opacity = 0.55;
+image.align = "center";
+image.valign = "middle";
+image.width = am4core.percent(80);
+image.height = am4core.percent(80);
+
+// add adapter for href to load correct image
+image.adapter.add("href", function (href, target) {
+  var dataItem = target.parent.dataItem;
+  if (dataItem) {
+    // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+    return "./img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+  }
+});
+
+// level1 series template
+var level1SeriesTemplate = chart.seriesTemplates.create("1");
+level1SeriesTemplate.columns.template.fillOpacity = 0;
+
+var bullet1 = level1SeriesTemplate.bullets.push(new am4charts.LabelBullet());
+bullet1.locationX = 0.5;
+bullet1.locationY = 0.5;
+bullet1.label.text = "{name}";
+bullet1.label.fill = am4core.color("#ffffff");
+
+// level2 series template
+var level2SeriesTemplate = chart.seriesTemplates.create("2");
+level2SeriesTemplate.columns.template.fillOpacity = 0;
+
+var bullet2 = level2SeriesTemplate.bullets.push(new am4charts.LabelBullet());
+bullet2.locationX = 0.5;
+bullet2.locationY = 0.5;
+bullet2.label.text = "{name}";
+bullet2.label.fill = am4core.color("#ffffff");
+
+chart.data = processData(data);
+
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv_rank" style="height: 500px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container" id="science">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Jak wypadają uczniowie czwartych klas w przyrodzie?</h3>
+
+									<img src="./img/intro2.gif" width="600" type="video/gif" id="intro"></img>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#d2d8e4">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+
+									<p>
+									W naukach przyrodniczych polscy czwartoklasiści wypadli relatywnie lepiej, uzyskując
+531 punktów i plasując się na 16. pozycji wśród 58 krajów. Podobny wynik
+uzyskali uczniowie ze Szwecji, Anglii, Czech, Australii, Hongkongu, Węgier, Irlandii
+i Turcji. </br></br>Statystycznie lepszymi rezultatami od naszych czwartoklasistów mogą
+pochwalić się tylko uczniowie z dziesięciu krajów. Najlepsze wyniki ponownie uzyskano
+w Singapurze (595), a kolejne miejsca zajęli czwartoklasiści z Korei (588), Rosji
+(567), Japonii (562) i Tajwanu.
+
+									</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z przyrody</h3>
+
+			<!-- <iframe src="bar_math.html" width="100%" height="600" frameBorder="0"> </iframe> -->
+			<!-- Chart code -->
+			<script>
+			am4core.ready(function() {
+
+			// Themes begin
+			am4core.useTheme(am4themes_animated);
+			// Themes end
+
+			var chart = am4core.create("chartdiv_bar_science", am4charts.XYChart);
+
+			var data = [
+				{category: "Philippines",
+				cnt: "Filipiny",
+				value: 249
+				},
+				{category: "Pakistan",
+				cnt: "Pakistan",
+				value: 290
+				},
+				{category: "South-Africa",
+				cnt: "RPA",
+				value: 324
+				},
+				{category: "Morocco",
+				cnt: "Maroko",
+				value: 374
+				},
+				{category: "Kuwait",
+				cnt: "Kuwejt",
+				value: 392
+				},
+				{category: "Saudi Arabia",
+				cnt: "Arabia Saudyjska",
+				value: 402
+				},
+				{category: "Kosovo",
+				cnt: "Kosowo",
+				value: 413
+				},
+				{category: "Republic-of-Macedonia",
+				cnt: "Macedonia Północna",
+				value: 426
+				},
+				{category: "Azerbaijan",
+				cnt: "Azerbejdżan",
+				value: 427
+				},
+				{category: "Oman",
+				cnt: "Oman",
+				value: 435
+				},
+				{category: "Iran",
+				cnt: "Iran",
+				value: 441
+				},
+				{category: "Qatar",
+				cnt: "Katar",
+				value: 449
+				},
+				{category: "Montenegro",
+				cnt: "Czarnogóra",
+				value: 453
+				},
+				{category: "Georgia",
+				cnt: "Gruzja",
+				value: 454
+				},
+				{category: "Bosnia and Herzegovina",
+				cnt: "Bośnia i Hercegowina",
+				value: 459
+				},
+				{category: "Armenia",
+				cnt: "Armenia",
+				value: 466
+				},
+				{category: "Chile",
+				cnt: "Chile",
+				value: 469
+				},
+				{category: "United Arab Emirates",
+				cnt: "Zjednoczone Emiraty Arabskie",
+				value: 473
+				},
+				{category: "France",
+				cnt: "Francja",
+				value: 488
+				},
+				{category: "Albania",
+				cnt: "Albania",
+				value: 489
+				},
+				{category: "Bahrain",
+				cnt: "Bahrajn",
+				value: 493
+				},
+				{category: "Kazakhstan",
+				cnt: "Kazachstan",
+				value: 494
+				},
+				{category: "Malta",
+				cnt: "Malta",
+				value: 496
+				},
+				{category: "Belgium",
+				cnt: "Belgia",
+				value: 501
+				},
+				{category: "New Zealand",
+				cnt: "Nowa Zelandia",
+				value: 503
+				},
+				{category: "Portugal",
+				cnt: "Portugalia",
+				value: 504
+				},
+				{category: "Italy",
+				cnt: "Włochy",
+				value: 510
+				},
+				{category: "Spain",
+				cnt: "Hiszpania",
+				value: 511
+				},
+				{category: "Cyprus",
+				cnt: "Cypr",
+				value: 511
+				},
+				{category: "Serbia",
+				cnt: "Serbia",
+				value: 517
+				},
+				{category: "Germany",
+				cnt: "Niemcy",
+				value: 518
+				},
+				{category: "Netherlands",
+				cnt: "Holandia",
+				value: 518
+				},
+				{category: "United-Kingdom",
+				cnt: "Irlandia Północna",
+				value: 518
+				},
+				{category: "Bulgaria",
+				cnt: "Bułgaria",
+				value: 521
+				},
+				{category: "Slovakia",
+				cnt: "Słowacja",
+				value: 521
+				},
+				{category: "Denmark",
+				cnt: "Dania",
+				value: 522
+				},
+				{category: "Austria",
+				cnt: "Austria",
+				value: 522
+				},
+				{category: "Canada",
+				cnt: "Kanada",
+				value: 523
+				},
+				{category: "Croatia",
+				cnt: "Chorwacja",
+				value: 524
+				},
+				{category: "Turkey",
+				cnt: "Turcja",
+				value: 526
+				},
+				{category: "Ireland",
+				cnt: "Irlandia",
+				value: 528
+				},
+				{category: "Hungary",
+				cnt: "Węgry",
+				value: 529
+				},
+				{category: "Hong-Kong",
+				cnt: "Hongkong",
+				value: 531
+				},
+				{category: "Republic of Poland",
+				cnt: "Polska",
+				value: 531
+				},
+				{category: "Australia",
+				cnt: "Australia",
+				value: 533
+				},
+				{category: "Czech Republic",
+				cnt: "Czechy",
+				value: 534
+				},
+				{category: "England",
+				cnt: "Anglia",
+				value: 537
+				},
+				{category: "Sweden",
+				cnt: "Szwecja",
+				value: 537
+				},
+				{category: "Lithuania",
+				cnt: "Litwa",
+				value: 538
+				},
+				{category: "United States",
+				cnt: "USA",
+				value: 539
+				},
+				{category: "Norway",
+				cnt: "Norwegia",
+				value: 539
+				},
+				{category: "Latvia",
+				cnt: "Łotwa",
+				value: 542
+				},
+				{category: "Finland",
+				cnt: "Finlandia",
+				value: 555
+				},
+				{category: "Taiwan",
+				cnt: "Tajwan",
+				value: 558
+				},
+				{category: "Japan",
+				cnt: "Japonia",
+				value: 562
+				},
+				{category: "Russia",
+				cnt: "Rosja",
+				value: 567
+				},
+				{category: "South Korea",
+				cnt: "Korea Południowa",
+				value: 588
+				},
+				{category: "Singapore",
+				cnt: "Singapur",
+				value: 595
+				},
+			];
+
+
+			chart.data = data;
+			var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+			categoryAxis.renderer.grid.template.location = 0;
+			categoryAxis.dataFields.category = "category";
+			categoryAxis.renderer.minGridDistance = 15;
+			categoryAxis.renderer.grid.template.location = 0.5;
+			categoryAxis.renderer.grid.template.strokeDasharray = "1,3";
+			categoryAxis.renderer.labels.template.rotation = -90;
+			categoryAxis.renderer.labels.template.horizontalCenter = "left";
+			categoryAxis.renderer.labels.template.location = 0.5;
+			categoryAxis.tooltip.disabled = true;
+
+
+			categoryAxis.renderer.labels.template.adapter.add("dx", function(dx, target) {
+			    return -target.maxRight / 2;
+			})
+
+			categoryAxis.renderer.labels.template.disabled = true;
+			var image = new am4core.Image();
+			image.horizontalCenter = "middle";
+			image.width = 20;
+			image.height = 20;
+			image.verticalCenter = "middle";
+			image.adapter.add("href", (href, target)=>{
+			  let category = target.dataItem.category;
+			  if(category){
+			    return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+			  }
+			  return href;
+			})
+			categoryAxis.dataItems.template.bullet = image;
+
+			var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+			valueAxis.tooltip.disabled = true;
+			valueAxis.renderer.ticks.template.disabled = true;
+			valueAxis.renderer.axisFills.template.disabled = true;
+
+			var series = chart.series.push(new am4charts.ColumnSeries());
+			series.dataFields.categoryX = "category";
+			series.dataFields.valueY = "value";
+			series.tooltipText = "{cnt} {valueY.value}";
+			series.sequencedInterpolation = true;
+			series.fillOpacity = 0;
+			series.strokeOpacity = 1;
+			series.strokeDashArray = "1,3";
+			series.columns.template.width = 0.01;
+			series.tooltip.pointerOrientation = "horizontal";
+
+			var bullet = series.bullets.create(am4charts.CircleBullet);
+
+			chart.cursor = new am4charts.XYCursor();
+
+			chart.scrollbarX = new am4core.Scrollbar();
+			chart.scrollbarY = new am4core.Scrollbar();
+
+
+			chart.events.on("ready", function () {
+			  categoryAxis.zoomToCategories(
+			  "France","Singapore")
+			})
+
+			var range = categoryAxis.axisRanges.create();
+			range.category = "Republic of Poland";
+			range.axisFill.fill = chart.colors.getIndex(1);
+			range.axisFill.fillOpacity = 0.2;
+			range.label.text = "";
+			}); // end am4core.ready()
+			</script>
+
+			<!-- HTML -->
+			<div id="chartdiv_bar_science" style="height: 500px;"></div>
+		</br>
+			<p>[Dostosuj filtr umieszczony nad wykresem, żeby zmienić zakres pokazywanych krajów]</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#ffffff">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z przyrody - mapa</h3>
+
+									<!-- <iframe src="map0.html" width="100%" height="500" frameBorder="0"> </iframe> -->
+									<!-- Chart code -->
+									<script>
+									am4core.ready(function() {
+
+									// Themes begin
+									am4core.useTheme(am4themes_animated);
+									// Themes end
+
+									 // Create map instance
+									var chart = am4core.create("chartdiv_map_science", am4maps.MapChart);
+									chart.maxZoomLevel = 1;
+									// Set map definition
+									try {
+											chart.geodata = am4geodata_worldHigh;
+									}
+									catch (e) {
+											chart.raiseCriticalError(new Error("Map geodata could not be loaded. Please download the latest <a href=\"https://www.amcharts.com/download/download-v4/\">amcharts geodata</a> and extract its contents into the same directory as your amCharts files."));
+									}
+
+									// Set projection
+									chart.projection = new am4maps.projections.Mercator();
+
+									// Create map polygon series
+									// var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+									// map polygon series (countries)
+									var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+									polygonSeries.useGeodata = true;
+									// specify which countries to include
+
+									polygonSeries.exclude = ["AQ"];
+
+									// country area look and behavior
+									var polygonTemplate = polygonSeries.mapPolygons.template;
+									polygonTemplate.strokeOpacity = 1;
+									polygonTemplate.stroke = am4core.color("#ffffff");
+									polygonTemplate.fillOpacity = 0.9;
+									polygonTemplate.tooltipText = "{name}";
+
+
+									//Set min/max fill color for each area
+									polygonSeries.heatRules.push({
+										property: "fill",
+										target: polygonSeries.mapPolygons.template,
+										min: chart.colors.getIndex(1).brighten(1),
+										max: chart.colors.getIndex(1).brighten(-.7)
+									});
+
+									// Make map load polygon data (state shapes and names) from GeoJSON
+									polygonSeries.useGeodata = true;
+
+									// Set heatmap values for each state
+									polygonSeries.data = [
+										{id: "PH",
+								cnt: "Filipiny",
+								value: 249},
+								{id: "PK",
+								cnt: "Pakistan",
+								value: 290},
+								{id: "ZA",
+								cnt: "RPA",
+								value: 324},
+								{id: "MA",
+								cnt: "Maroko",
+								value: 374},
+								{id: "KW",
+								cnt: "Kuwejt",
+								value: 392},
+								{id: "SA",
+								cnt: "Arabia Saudyjska",
+								value: 402},
+								{id: "XK",
+								cnt: "Kosowo",
+								value: 413},
+								{id: "MK",
+								cnt: "Macedonia Północna",
+								value: 426},
+								{id: "AZ",
+								cnt: "Azerbejdżan",
+								value: 427},
+								{id: "OM",
+								cnt: "Oman",
+								value: 435},
+								{id: "IR",
+								cnt: "Iran",
+								value: 441},
+								{id: "QA",
+								cnt: "Katar",
+								value: 449},
+								{id: "ME",
+								cnt: "Czarnogóra",
+								value: 453},
+								{id: "GE",
+								cnt: "Gruzja",
+								value: 454},
+								{id: "BA",
+								cnt: "Bośnia i Hercegowina",
+								value: 459},
+								{id: "AM",
+								cnt: "Armenia",
+								value: 466},
+								{id: "CL",
+								cnt: "Chile",
+								value: 469},
+								{id: "AE",
+								cnt: "Zjednoczone Emiraty Arabskie",
+								value: 473},
+								{id: "FR",
+								cnt: "Francja",
+								value: 488},
+								{id: "AL",
+								cnt: "Albania",
+								value: 489},
+								{id: "BH",
+								cnt: "Bahrajn",
+								value: 493},
+								{id: "KZ",
+								cnt: "Kazachstan",
+								value: 494},
+								{id: "MT",
+								cnt: "Malta",
+								value: 496},
+								{id: "BE",
+								cnt: "Belgia",
+								value: 501},
+								{id: "NZ",
+								cnt: "Nowa Zelandia",
+								value: 503},
+								{id: "PT",
+								cnt: "Portugalia",
+								value: 504},
+								{id: "IT",
+								cnt: "Włochy",
+								value: 510},
+								{id: "ES",
+								cnt: "Hiszpania",
+								value: 511},
+								{id: "CY",
+								cnt: "Cypr",
+								value: 511},
+								{id: "RS",
+								cnt: "Serbia",
+								value: 517},
+								{id: "DE",
+								cnt: "Niemcy",
+								value: 518},
+								{id: "NL",
+								cnt: "Holandia",
+								value: 518},
+								{id: "XI",
+								cnt: "Irlandia Północna",
+								value: 518},
+								{id: "BG",
+								cnt: "Bułgaria",
+								value: 521},
+								{id: "SK",
+								cnt: "Słowacja",
+								value: 521},
+								{id: "DK",
+								cnt: "Dania",
+								value: 522},
+								{id: "AT",
+								cnt: "Austria",
+								value: 522},
+								{id: "CA",
+								cnt: "Kanada",
+								value: 523},
+								{id: "HR",
+								cnt: "Chorwacja",
+								value: 524},
+								{id: "TR",
+								cnt: "Turcja",
+								value: 526},
+								{id: "IE",
+								cnt: "Irlandia",
+								value: 528},
+								{id: "HU",
+								cnt: "Węgry",
+								value: 529},
+								{id: "HK",
+								cnt: "Hongkong",
+								value: 531},
+								{id: "PL",
+								cnt: "Polska",
+								value: 531},
+								{id: "AU",
+								cnt: "Australia",
+								value: 533},
+								{id: "CZ",
+								cnt: "Czechy",
+								value: 534},
+								{id: "GB",
+								cnt: "Anglia",
+								value: 537},
+								{id: "SE",
+								cnt: "Szwecja",
+								value: 537},
+								{id: "LT",
+								cnt: "Litwa",
+								value: 538},
+								{id: "US",
+								cnt: "USA",
+								value: 539},
+								{id: "NO",
+								cnt: "Norwegia",
+								value: 539},
+								{id: "LV",
+								cnt: "Łotwa",
+								value: 542},
+								{id: "FI",
+								cnt: "Finlandia",
+								value: 555},
+								{id: "TW",
+								cnt: "Tajwan",
+								value: 558},
+								{id: "JP",
+								cnt: "Japonia",
+								value: 562},
+								{id: "RU",
+								cnt: "Rosja",
+								value: 567},
+								{id: "KR",
+								cnt: "Korea Południowa",
+								value: 588},
+								{id: "SG",
+								cnt: "Singapur",
+								value: 595},
+
+									];
+
+									// Set up heat legend
+									let heatLegend = chart.createChild(am4maps.HeatLegend);
+									heatLegend.series = polygonSeries;
+									heatLegend.align = "right";
+									heatLegend.valign = "bottom";
+									heatLegend.width = am4core.percent(20);
+									heatLegend.valueAxis.renderer.labels.template.fontSize = 14;
+									heatLegend.marginRight = am4core.percent(35);
+									heatLegend.minValue = 200;
+									heatLegend.maxValue = 700;
+
+									// Set up custom heat map legend labels using axis ranges
+									var minRange = heatLegend.valueAxis.axisRanges.create();
+									minRange.value = heatLegend.minValue;
+									minRange.label.text = "200";
+									var maxRange = heatLegend.valueAxis.axisRanges.create();
+									maxRange.value = heatLegend.maxValue;
+									maxRange.label.text = "700";
+
+									// Blank out internal heat legend value axis labels
+									heatLegend.valueAxis.renderer.labels.template.adapter.add("text", function(labelText) {
+										return "";
+									});
+
+									// Configure series tooltip
+									var polygonTemplate = polygonSeries.mapPolygons.template;
+									polygonTemplate.tooltipText = "[bold]{cnt}[\] \n wynik z przyrody: {value}";
+									polygonTemplate.nonScalingStroke = true;
+									polygonTemplate.strokeWidth = 0.5;
+
+									// Create hover state and set alternative fill color
+									var hs = polygonTemplate.states.create("hover");
+									hs.properties.fill = am4core.color("#3c5bdc");
+
+									}); // end am4core.ready()
+									</script>
+
+									<!-- HTML -->
+									<div id="chartdiv_map_science" style="height: 500px;"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki z przyrody - grupy krajów</h3>
+
+			<!-- <iframe src="country_rank_science.html" width="100%" height="600" frameBorder="0"> </iframe> -->
+			<!-- Chart code -->
+			<script>
+			am4core.ready(function() {
+
+			// Themes begin
+			am4core.useTheme(am4themes_animated);
+			// Themes end
+
+			var data = {
+			    "Niższe wyniki": {"Chorwacja":1,"Kanada":1,"Dania":1,"Austria":1,"Bułgaria":1,"Słowacja":1,"Irlandia Północna":1,"Holandia":1,"Niemcy":1,"Serbia":1,"Cypr":1,"Hiszpania":1,"Włochy":1,"Portugalia":1,"Nowa Zelandia":1,"Belgia":1,"Malta":1,"Kazachstan":1,"Bahrajn":1,"Albania":1,"Francja":1,"ZEA":1,"Chile":1,"Armenia":1,"Bośnia i Hercegowina":1,"Gruzja":1,"Czarnogóra":1,"Katar":1,"Iran":1,"Oman":1,"Azerbejdżan":1,"Macedonia Północna":1,"Kosowo":1,"Arabia Saudyjska":1,"Kuwejt":1,"Maroko":1,"RPA":1, "Pakistan":1,"Filipiny":1},
+			    "Wyższe wyniki": {"Singapur":1,"Korea Południowa":1,"Rosja":1,"Japonia":1,"Tajwan":1,"Finlandia":1,"Łotwa":1,"Norwegia":1,"USA":1,"Litwa":1},
+			    "Porównywalne wyniki": {"Szwecja":1,"Anglia":1,"Czechy":1,"Australia":1,"Hongkong":1,"Węgry":1,"Irlandia":1,"Turcja":1}
+			}
+
+			function processData(data) {
+			  var treeData = [];
+
+			  var smallBrands = { name: "Other", children: [] };
+
+			  for (var brand in data) {
+			    var brandData = { name: brand, children: [] }
+			    var brandTotal = 0;
+			    for (var model in data[brand]) {
+			      brandTotal += data[brand][model];
+			    }
+
+			    for (var model in data[brand]) {
+			      // do not add very small
+			      if (data[brand][model] > 0) {
+			        brandData.children.push({ name: model, count: data[brand][model] });
+			      }
+			    }
+
+			    // add to small brands if total number less than
+			    if (brandTotal > 1) {
+			      treeData.push(brandData);
+			    }
+			    // else {
+			    //   smallBrands.children.push(brandData)
+			    // }
+
+			  }
+			  // treeData.push(smallBrands);
+			  return treeData;
+			}
+
+			// create chart
+			var chart = am4core.create("chartdiv_rank_science", am4charts.TreeMap);
+			chart.hiddenState.properties.opacity = 1; // this makes initial fade in effect
+
+			// only one level visible initially
+			chart.maxLevels = 1;
+			// define data fields
+			chart.dataFields.value = "count";
+			chart.dataFields.name = "name";
+			chart.dataFields.children = "children";
+			chart.homeText = "";
+
+			// enable navigation
+			chart.navigationBar = new am4charts.NavigationBar();
+
+			// level 0 series template
+			var level0SeriesTemplate = chart.seriesTemplates.create("0");
+			level0SeriesTemplate.strokeWidth = 2;
+
+			// by default only current level series bullets are visible, but as we need brand bullets to be visible all the time, we modify it's hidden state
+			level0SeriesTemplate.bulletsContainer.hiddenState.properties.opacity = 1;
+			level0SeriesTemplate.bulletsContainer.hiddenState.properties.visible = true;
+			// create hover state
+			var columnTemplate = level0SeriesTemplate.columns.template;
+			var hoverState = columnTemplate.states.create("hover");
+
+			// darken
+			hoverState.adapter.add("fill", function (fill, target) {
+			  if (fill instanceof am4core.Color) {
+			    return am4core.color(am4core.colors.brighten(fill.rgb, -0.2));
+			  }
+			  return fill;
+			})
+
+			// add logo
+			var image = columnTemplate.createChild(am4core.Image);
+			image.opacity = 0.55;
+			image.align = "center";
+			image.valign = "middle";
+			image.width = am4core.percent(80);
+			image.height = am4core.percent(80);
+
+			// add adapter for href to load correct image
+			image.adapter.add("href", function (href, target) {
+			  var dataItem = target.parent.dataItem;
+			  if (dataItem) {
+			    // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+			    return "./img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+			  }
+			});
+
+			// level1 series template
+			var level1SeriesTemplate = chart.seriesTemplates.create("1");
+			level1SeriesTemplate.columns.template.fillOpacity = 0;
+
+			var bullet1 = level1SeriesTemplate.bullets.push(new am4charts.LabelBullet());
+			bullet1.locationX = 0.5;
+			bullet1.locationY = 0.5;
+			bullet1.label.text = "{name}";
+			bullet1.label.fill = am4core.color("#ffffff");
+
+			// level2 series template
+			var level2SeriesTemplate = chart.seriesTemplates.create("2");
+			level2SeriesTemplate.columns.template.fillOpacity = 0;
+
+			var bullet2 = level2SeriesTemplate.bullets.push(new am4charts.LabelBullet());
+			bullet2.locationX = 0.5;
+			bullet2.locationY = 0.5;
+			bullet2.label.text = "{name}";
+			bullet2.label.fill = am4core.color("#ffffff");
+
+			chart.data = processData(data);
+
+			}); // end am4core.ready()
+			</script>
+
+			<!-- HTML -->
+			<div id="chartdiv_rank_science" style="height: 500px;"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#d2d8e4">
+					<div class="container" id="time">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+									<h3>Jak zmieniły się wyniki polskich uczniów od 2015 roku?
+</h3>
+
+									<img src="./img/intro3.gif" width="600" type="video/gif" id="intro"></img>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#fff">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+									<h3>Zmiana wyników w matematyce
+</h3>
+
+<p>
+	Polscy uczniowe klas IV w 2019 roku osiągnęli niższe rezultaty niż w 2015 roku.
+Spadek w przypadku matematyki wynosi 15 punktów, co jest znaczącą zmianą.
+Wyniki najlepszych uczniów pozostały prawie niezmienione, a spadek średniego
+poziomu zawdzięczamy słabszym rezultatom uczniów przeciętnych i jeszcze niższym
+uczniów najsłabszych.</br></br> W porównaniu z rokiem 2015 mamy podobną liczbę uczniów
+osiągających najwyższy poziom wiedzy, ale można zaobserwować spadek w odsetku
+uczniów na poziomie średnim – w 2015 roku było to 80 proc. uczniów, a w 2019 już
+tylko 73 proc. Najniższy poziom umiejętności w 2015 roku osiągnęło 96 proc. uczniów,
+a w 2019 roku już 93 proc.
+
+</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#d2d8e4">
+					<div class="container">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+									<h3>Zmiana wyników w przyrodzie
+</h3>
+
+<p>
+Również w przypadku wiedzy z nauk przyrodniczych Polska odnotowała znaczący
+spadek. W 2015 roku polscy uczniowie uzyskali bardzo dobre rezultaty ze średnim
+wynikiem na poziomie 547 punktów. Przez ostatnie 4 lata wyniki spadły więc
+o 16 punktów, przy czym podobnie jak w przypadku matematyki, spadek wyników
+jest większy dla przeciętnych i słabszych uczniów.</br></br> W 2015 roku 12 proc. uczniów
+osiągnęło wyniki na najwyższym poziomie, a w 2019 roku było to już tylko 9 proc.
+W 2015 roku mieliśmy też 85 proc. uczniów na średnim poziomie, a w 2019 było ich
+79 proc. Wzrosła też o 2 punkty procentowe liczba uczniów nie posiadających nawet
+podstawowej wiedzy o przyrodzie.
+
+</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#ffff">
+					<div class="container" id="kids">
+						<div class="row d-flex align-items-center fullscreen">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h4 class="section-title"></h4>
+									<h3>Wyniki czwartoklasistów w zależności od tego, jak długo uczęszczali do przedszkola
+									</h3>
+
+									<!-- Chart code -->
+									<script>
+									am4core.ready(function() {
+
+									// Themes begin
+									am4core.useTheme(am4themes_animated);
+									// Themes end
+
+
+
+									var chart = am4core.create('chartdiv_time_comp', am4charts.XYChart)
+									chart.colors.step = 2;
+
+									chart.legend = new am4charts.Legend()
+									chart.legend.position = 'top'
+									chart.legend.paddingBottom = 20
+									chart.legend.labels.template.maxWidth = 95
+
+									var xAxis = chart.xAxes.push(new am4charts.CategoryAxis())
+									xAxis.dataFields.category = 'category'
+									xAxis.renderer.cellStartLocation = 0.1
+									xAxis.renderer.cellEndLocation = 0.9
+									xAxis.renderer.grid.template.location = 0;
+
+									var yAxis = chart.yAxes.push(new am4charts.ValueAxis());
+									yAxis.min = 490;
+
+									function createSeries(value, name) {
+									    var series = chart.series.push(new am4charts.ColumnSeries())
+									    series.dataFields.valueY = value
+									    series.dataFields.categoryX = 'category'
+									    series.name = name
+
+									    series.events.on("hidden", arrangeColumns);
+									    series.events.on("shown", arrangeColumns);
+
+									    var bullet = series.bullets.push(new am4charts.LabelBullet())
+									    bullet.interactionsEnabled = false
+									    bullet.dy = 30;
+									    bullet.label.text = '{valueY}'
+									    bullet.label.fill = am4core.color('#ffffff')
+
+									    return series;
+									}
+
+									chart.data = [
+									    {
+									        category: '1 rok lub mniej',
+									        first: 498,
+									        second: 511,
+									    },
+									    {
+									        category: '2 lata',
+									        first: 510,
+									        second: 523,
+									    },
+									    {
+									        category: '3 lata lub więcej',
+									        first: 531,
+									        second: 540,
+									    }
+									]
+
+
+
+									createSeries('first', 'matematyka');
+									createSeries('second', 'przyroda');
+
+
+									function arrangeColumns() {
+
+									    var series = chart.series.getIndex(0);
+
+									    var w = 1 - xAxis.renderer.cellStartLocation - (1 - xAxis.renderer.cellEndLocation);
+									    if (series.dataItems.length > 1) {
+									        var x0 = xAxis.getX(series.dataItems.getIndex(0), "categoryX");
+									        var x1 = xAxis.getX(series.dataItems.getIndex(1), "categoryX");
+									        var delta = ((x1 - x0) / chart.series.length) * w;
+									        if (am4core.isNumber(delta)) {
+									            var middle = chart.series.length / 2;
+
+									            var newIndex = 0;
+									            chart.series.each(function(series) {
+									                if (!series.isHidden && !series.isHiding) {
+									                    series.dummyData = newIndex;
+									                    newIndex++;
+									                }
+									                else {
+									                    series.dummyData = chart.series.indexOf(series);
+									                }
+									            })
+									            var visibleCount = newIndex;
+									            var newMiddle = visibleCount / 2;
+
+									            chart.series.each(function(series) {
+									                var trueIndex = chart.series.indexOf(series);
+									                var newIndex = series.dummyData;
+
+									                var dx = (newIndex - trueIndex + middle - newMiddle) * delta
+
+									                series.animate({ property: "dx", to: dx }, series.interpolationDuration, series.interpolationEasing);
+									                series.bulletsContainer.animate({ property: "dx", to: dx }, series.interpolationDuration, series.interpolationEasing);
+									            })
+									        }
+									    }
+									}
+
+									}); // end am4core.ready()
+									</script>
+
+									<!-- HTML -->
+									<div id="chartdiv_time_comp" style="height: 500px;"></div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#fff">
+					<div class="container" id="conclusion">
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h2 class="section-title"></h2>
+									<h3>Podsumowanie
+				</h3>
+				<div class="hd-left text-left">
+
+				<p>
+• Należy się zastanowić nad zmianami w podstawach programowych – wyniki
+TIMSS pokazują, że można nauczać matematyki ambitniej.</br></br>
+• Dane sugerują, że kluczowa dla wyników w nauce jest powszechna trzyletnia edukacja
+przedszkolna. Uczniowie, którzy mieli dłuższe doświadczenie przedszkolne,
+osiągają relatywnie lepsze wyniki.</br></br>
+• Wreszcie, należy przyjrzeć się metodom i technikom nauczania w edukacji
+początkowej. Meta-analizy badań eksperymentalnych dotyczących pedagogiki
+nauczania wskazują, że jest to obszar szczególnie istotny, szczególnie w konktekscie
+najsłabszych uczniów.</br></br>
+• Miejmy nadzieję, że wyniki TIMSS, czyli badania stanowiącego najważniejsze źródło
+porównań w osiągnięciach najmłodszych uczniów między poszczególnymi krajami,
+zostaną mądrze wykorzystane w debacie o niezbędnych zmianach w polskiej edukacji
+na pierwszych jej etapach.
+
+				</p>
+</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+
+				<!-- Start Hero Area -->
+				<div class="swiper-slide section slider-area fullscreen-slider fullscreen d-flex align-items-center" style="background-color:#eeeeee">
+					<div class="container">
+
+						<div class="row d-flex align-items-center fullscreen award-content">
+							<div class="col-lg-12">
+								<div class="content text-center">
+									<h3 class="section-title"><a href="">Tu znajdziesz pełną wersję raportu</a></h3>
+
+
+
+
+																	<ul class="rn-award-list">
+
+	                                    <li>
+<b>Kontakt</b> </br>
+E-mail:</br>
+
+kontakt@evidin.pl
+
+	                                        <a href="#"></a>
+	                                    </li>
+
+	                                </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Hero Area -->
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</main>
+		<!--// Page Content -->
+
+	</div>
+
+	<!--// Wrapper -->
+
+	<!-- Js Files -->
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- <script src="js/vendor/jquery.js"></script> -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/swiper-init.js"></script>
+
+</body>
+
+</html>
