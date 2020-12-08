@@ -1004,21 +1004,21 @@ hoverState.adapter.add("fill", function (fill, target) {
 })
 
 // add logo
-var image = columnTemplate.createChild(am4core.Image);
-image.opacity = 0.55;
-image.align = "center";
-image.valign = "middle";
-image.width = am4core.percent(80);
-image.height = am4core.percent(80);
-
-// add adapter for href to load correct image
-image.adapter.add("href", function (href, target) {
-  var dataItem = target.parent.dataItem;
-  if (dataItem) {
-    // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
-    return "img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
-  }
-});
+// var image = columnTemplate.createChild(am4core.Image);
+// image.opacity = 0.55;
+// image.align = "center";
+// image.valign = "middle";
+// image.width = am4core.percent(80);
+// image.height = am4core.percent(80);
+//
+// // add adapter for href to load correct image
+// image.adapter.add("href", function (href, target) {
+//   var dataItem = target.parent.dataItem;
+//   if (dataItem) {
+//     // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+//     return "img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+//   }
+// });
 
 // level1 series template
 var level1SeriesTemplate = chart.seriesTemplates.create("1");
