@@ -932,9 +932,9 @@ am4core.useTheme(am4themes_animated);
 // Themes end
 
 var data = {
-    "Niższe_wyniki": { "Kazachstan": 1, "Kanada":1,"Słowacja":1,"Chorwacja":1,"Malta":1,"Serbia":1,"Hiszpania":1,"Armenia":1,"Albania":1,"Nowa Zelandia":1,"Francja":1,"Gruzja":1,"ZEA":1,"Bahrajn":1,"Macedonia Północna":1,"Czarnogóra":1,"Bośnia i Hercegowina":1,"Katar":1,"Kosowo":1,"Iran":1,"Chile":1,"Oman":1,"Arabia Saudyjska":1,"Maroko":1,"Kuwejt":1,"RPA":1,"Pakistan":1,"Filipiny":1},
-    "Wyższe_wyniki": { "Singapur": 1, "Hongkong": 1, "Korea Południowa":1, "Tajwan":1,"Japonia":1,"Rosja":1,"Irlandia Północna":1,"Anglia":1,"Irlandia":1,"Łotwa":1,"Norwegia":1,"Litwa":1,"Austria":1,"Holandia":1,"USA":1,"Czechy":1,"Belgia":1,"Cypr":1,"Finlandia":1},
-    "Porównywalne_wyniki": { "Portugalia": 1, "Dania": 1,"Węgry":1,"Turcja":1,"Szwecja":1,"Niemcy":1,"Australia":1,"Azerbejdżan":1,"Bułgaria":1,"Włochy":1},
+    "Niższe wyniki": { "Kazachstan": 1, "Kanada":1,"Słowacja":1,"Chorwacja":1,"Malta":1,"Serbia":1,"Hiszpania":1,"Armenia":1,"Albania":1,"Nowa Zelandia":1,"Francja":1,"Gruzja":1,"ZEA":1,"Bahrajn":1,"Macedonia Północna":1,"Czarnogóra":1,"Bośnia i Hercegowina":1,"Katar":1,"Kosowo":1,"Iran":1,"Chile":1,"Oman":1,"Arabia Saudyjska":1,"Maroko":1,"Kuwejt":1,"RPA":1,"Pakistan":1,"Filipiny":1},
+    "Wyższe wyniki": { "Singapur": 1, "Hongkong": 1, "Korea Południowa":1, "Tajwan":1,"Japonia":1,"Rosja":1,"Irlandia Północna":1,"Anglia":1,"Irlandia":1,"Łotwa":1,"Norwegia":1,"Litwa":1,"Austria":1,"Holandia":1,"USA":1,"Czechy":1,"Belgia":1,"Cypr":1,"Finlandia":1},
+    "Porównywalne wyniki": { "Portugalia": 1, "Dania": 1,"Węgry":1,"Turcja":1,"Szwecja":1,"Niemcy":1,"Australia":1,"Azerbejdżan":1,"Bułgaria":1,"Włochy":1},
 }
 
 function processData(data) {
@@ -1003,22 +1003,22 @@ hoverState.adapter.add("fill", function (fill, target) {
   return fill;
 })
 
-// add logo
-var image = columnTemplate.createChild(am4core.Image);
-image.opacity = 0.55;
-image.align = "center";
-image.valign = "middle";
-image.width = am4core.percent(80);
-image.height = am4core.percent(80);
-
-// add adapter for href to load correct image
-image.adapter.add("href", function (href, target) {
-  var dataItem = target.parent.dataItem;
-  if (dataItem) {
-    // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
-    return "img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
-  }
-});
+// // add logo
+// var image = columnTemplate.createChild(am4core.Image);
+// image.opacity = 0.55;
+// image.align = "center";
+// image.valign = "middle";
+// image.width = am4core.percent(80);
+// image.height = am4core.percent(80);
+//
+// // add adapter for href to load correct image
+// image.adapter.add("href", function (href, target) {
+//   var dataItem = target.parent.dataItem;
+//   if (dataItem) {
+//     // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+//     return "img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+//   }
+// });
 
 // level1 series template
 var level1SeriesTemplate = chart.seriesTemplates.create("1");
@@ -1819,7 +1819,7 @@ w Singapurze (595), a kolejne miejsca zajęli czwartoklasiści z Korei (588), Ro
 			  var dataItem = target.parent.dataItem;
 			  if (dataItem) {
 			    // return "https://www.amcharts.com/lib/images/logos/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
-			    return "./img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
+			    return "https://gitlab.com/timms2019/pl/-/tree/master/img/icons/" + dataItem.treeMapDataItem.name.toLowerCase() + ".png";
 			  }
 			});
 
